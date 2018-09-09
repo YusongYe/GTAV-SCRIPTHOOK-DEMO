@@ -958,7 +958,7 @@ void process_location_menu()
     set_status_text(loc);
 }
 int activeLineIndexClear = 0;
-process_cleararea_menu()
+void process_cleararea_menu()
 {
     const float lineWidth = 250.0;
     const int lineCount = 2;
@@ -1023,7 +1023,7 @@ process_cleararea_menu()
                     break;
                 default:
                     if (lines[activeLineIndexClear].pState)
-                        *lines[activeLineIndexClear].pState = !(*lines[activeLineIndexCLear].pState);
+                        *lines[activeLineIndexClear].pState = !(*lines[activeLineIndexClear].pState);
                     if (lines[activeLineIndexClear].pUpdated)
                         *lines[activeLineIndexClear].pUpdated = true;
             }
